@@ -41,12 +41,12 @@ html(lang='pt-br')
                 | Alugue
 
 
-    div.jumbotron
+    section.jumbotron
       span.jumbotron__text
         | Deixe cineza levar você!
 
 
-    div.motivational
+    section.motivational
 
       div.motivational__text
         h2.motivational__text__title
@@ -76,7 +76,8 @@ html(lang='pt-br')
           p.motivational__items__easy__text
             | Nossos atendentes são treinados pala esclarecer todas as suas duvidas
 
-    div.models
+
+    section.models
       div.models__car
         img.models__car__icon(src='assets/img/car_draw.svg', alt='')
 
@@ -88,6 +89,46 @@ html(lang='pt-br')
         button.models__text__cta
           | Veja os veículos!
 
+
+    section.know-more
+      div.know-more__text
+        h2.know-more__text__title
+          | Cineza é&nbsp;
+          span.know-more__text__title__more
+            | mais&nbsp;
+          | do que carros
+        span.know-more__text__mission
+          | Nossa missão é levar pessoas até seus objetivos
+        buttom.know-more__text__cta
+          | Saiba mais
+
+
+    section.app
+      div.app__center
+        div.app__center__cellphone
+          img.app__center__cellphone__image(src='assets/img/iphone.svg', alt='')
+        div.app__center__text
+          h2.app__center__text__title
+            | Leve a cineza para onde você for
+          p.app__center__text__description
+            | Com o aplicativo de Cineza, você terá suporte 24 horas, sete dias por semana, onde quer que você esteja!
+          span.app__center__text__soon
+            | Em breve
+          a.app__center__text__app-store(href='')
+            img.app__center__text__app-store__image(src='assets/img/appstore.png', alt='')
+          a.app__center__text__google-play(href='')
+            img.app__center__text__google-play__image(src='assets/img/googleplay.png', alt='')
+
+    footer.footer
+      div.footer__logo
+        a.footer__logo__link(href='javascript:void(0)')
+          img.footer__logo__link__lent-a-cal(src='assets/img/logo.svg', alt='')
+        a.footer__logo__link(href='javascript:void(0)')
+          img.footer__logo__link__cineza(src='assets/img/cineza.svg', alt='')
+      p.footer__fictional
+        | Cineza lent-a-cal, assim com todos os sites da Cineza Colpolation, não são empresas reais. Seu conteúdo tem finalidade humorística e acadêmica, ao servir de prática nas tecnologias utilizadas para os colaboradores do projeto. Qualquer semelhanção com pessoas, personagens ou marcas registradas é mera coincidência.
+      span.footer__copyright
+        | © Cineza Lent-a-Cal pertence ao grupo Cineza Colpolation - todos os direitos reservados
 
     //- JS scripts
     //- ===================================
