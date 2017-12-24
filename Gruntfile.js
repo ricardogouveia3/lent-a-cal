@@ -9,8 +9,8 @@ module.exports = function(grunt) {
         separator: ';',
       },
       dist: {
-        src: ['assets/js/uglyfied.js'],
-        dest: 'assets/js/index.js',
+        src: ['assets/js/index.min.js'],
+        dest: 'assets/js/index.min.js',
       },
     },
 
@@ -20,7 +20,7 @@ module.exports = function(grunt) {
       },
       my_target: {
         files: {
-          'assets/js/uglyfied.js': ['assets/js/raw.js']
+          'assets/js/index.min.js': ['assets/js/index.js'],
         }
       }
     },
@@ -28,10 +28,18 @@ module.exports = function(grunt) {
     sass: {
       build: {
           options: {
-            style: 'compressed' //Seems to be the same as minified
+            style: 'compressed'
           },
         files: {
           'assets/css/style.css': 'assets/css/style.sass',
+        }
+      }
+    },
+
+    autoprefixer:{
+      dist:{
+        files:{
+          'assets/css/style.css':'assets/css/style.css'
         }
       }
     },
@@ -45,20 +53,24 @@ module.exports = function(grunt) {
     },
 
     watch: {
-      structure: {
+      pug: {
         files: ['index.pug', 'includes/*.pug'],
         tasks: ['pug'],
       },
-      style: {
+      sass: {
         files: ['assets/css/style.sass', 'assets/css/_partials/*.sass'],
         tasks: ['sass'],
       },
-      js: {
-        files: ['assets/js/raw.js'],
+      autoprefixer: {
+        files: ['assets/css/style.css'],
+        tasks: ['autoprefixer']
+      },
+      uglify: {
+        files: ['assets/js/index.js'],
         tasks: ['uglify'],
       },
-      scripts: {
-        files: ['assets/js/uglyfied.js'],
+      concat: {
+        files: ['assets/js/index.min.js'],
         tasks: ['concat'],
       },
     },
@@ -67,8 +79,8 @@ module.exports = function(grunt) {
       dev: {
         bsFiles: {
           src : [
-            'assets/css/*.css',
-            'assets/js/*.js',
+            'assets/css/style.css',
+            'assets/js/index.min.js',
             'index.html'
           ]
         },
@@ -86,6 +98,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-sass');
+  grunt.loadNpmTasks('grunt-autoprefixer');
   grunt.loadNpmTasks('grunt-contrib-pug');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-browser-sync');

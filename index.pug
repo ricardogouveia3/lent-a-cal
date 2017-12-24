@@ -1,0 +1,102 @@
+doctype html
+html(lang='pt-br')
+  head
+    meta(charset='utf-8')
+    meta(name='description', content='Cineza Lent a Cal é uma emplesa de aluguel de calos com pleços alasadoles')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0, user-scalable=no')
+    meta(name='format-detection', content='telephone=no')
+
+    //- Title
+    //- ===================================
+    title Cineza Lent a Cal - Desse Cineza levar você!
+
+    //- Favicon and SVG logo
+    //- ===================================
+    link(rel='shortcut icon', href='assets/img/favicon.ico')
+    link(rel='logo', type='image/svg', href='assets/img/logo.svg')
+
+    //- Stylesheet and fonts are placed after body for performance reasons
+    //- Scripts are places at the end of body for performance reasons
+
+  body
+    header.header
+      div.header__inner
+
+        a.header__inner__link(href='/')
+          img.header__inner__logo(src='assets/img/logo.svg')
+
+        nav.header__inner__nav
+          ul.header__inner__nav__list
+            li.header__inner__nav__list__item
+              a.header__inner__nav__list__item__link.header__inner__nav__list__item__link_active(href='javascript:void(0)')
+                | Home
+            li.header__inner__nav__list__item
+              a.header__inner__nav__list__item__link(href='javascript:void(0)')
+                | Carros
+            li.header__inner__nav__list__item
+              a.header__inner__nav__list__item__link(href='javascript:void(0)')
+                | Sobre Nós
+            li.header__inner__nav__list__item.header__inner__nav__list__item_cta
+              a.header__inner__nav__list__item__link(href='javascript:void(0)')
+                | Alugue
+
+
+    div.jumbotron
+      span.jumbotron__text
+        | Deixe cineza levar você!
+
+
+    div.motivational
+
+      div.motivational__text
+        h2.motivational__text__title
+          | Você pode confiar em cineza
+        span.motivational__text__description
+          | Os serviços de cineza são usados por pessoas no mundo todo
+
+      div.motivational__items
+        div.motivational__items__secure
+          img.motivational__items__secure__icon(src='assets/img/secure.svg', alt='')
+          h3.motivational__items__secure__title
+            | Seguro
+          p.motivational__items__secure__text
+            | Todos os carros de Cineza são equipados com air bag e possuem seguro
+
+        div.motivational__items__fast
+          img.motivational__items__fast__icon(src='assets/img/fast.svg', alt='')
+          h3.motivational__items__fast__title
+            | Rápido
+          p.motivational__items__fast__text
+            | Fazendo sua reselva online, você pode pegar um carro na loja mais próxima em 30 minutos
+
+        div.motivational__items__easy
+          img.motivational__items__easy__icon(src='assets/img/easy.svg', alt='')
+          h3.motivational__items__easy__title
+            | Fácil
+          p.motivational__items__easy__text
+            | Nossos atendentes são treinados pala esclarecer todas as suas duvidas
+
+    div.models
+      div.models__car
+        img.models__car__icon(src='assets/img/car_draw.svg', alt='')
+
+      div.models__text
+        span.models__text__description.models__text__description_intro
+          | Não importa o modelo
+        span.models__text__description.models__text__description_finish
+          | Cineza tem o carro ideal pra você!
+        button.models__text__cta
+          | Veja os veículos!
+
+
+    //- JS scripts
+    //- ===================================
+    script(async, src='assets/js/index.min.js')
+
+//- Stylesheet and fonts
+//- ===================================
+link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css')
+link(rel='stylesheet', href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800')
+link(rel='stylesheet', href='assets/css/style.css')
+
+

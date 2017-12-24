@@ -1,0 +1,102 @@
+.motivational
+  align-items: center
+  background-color: #F6F6F6
+  display: flex
+  flex-wrap: wrap
+  min-height: 50vh
+  padding: 2em 0
+  width: 100vw
+
+
+.motivational__text
+  align-self: flex-start
+  color: #666666
+  margin: 0 2em
+  text-align: center
+  width: 100%
+
+.motivational__text__title,
+.motivational__text__description
+  font-weight: 300
+
+.motivational__text__title
+  font-size: 1.7em
+  letter-spacing: 7px
+  margin: 0 0 5px 0
+  text-transform: uppercase
+  @media (max-width: 600px)
+    font-size: 1.3em
+
+.motivational__text__description
+  color: #9A9A9A
+  letter-spacing: 4px
+
+
+.motivational__items
+  display: flex
+  flex-wrap: wrap
+  margin: 2em auto 0 auto
+  max-width: 1200px
+  @media (max-width: 600px)
+    margin-top: 0
+
+.motivational__items__secure,
+.motivational__items__fast,
+.motivational__items__easy
+  margin: 0 1em
+  max-width: 30%
+  text-align: center
+
+  @media (max-width: 960px)
+    margin: 0 0.5em
+
+  @media (max-width: 600px)
+    margin: 2em auto 0 auto
+    max-width: unset
+    min-width: 320px
+    width: 70%
+
+.motivational__items__secure__icon
+  height: 66px
+
+  @media (max-width: 960px)
+    height: 40px
+
+.motivational__items__fast__icon
+  padding: 10px 0 10px 0
+
+  @media (max-width: 960px)
+    height: 40px
+    padding: 0
+
+.motivational__items__easy__icon
+  margin-left: -25px
+  padding: 4px 0 4px 0
+
+  @media (max-width: 960px)
+    height: 40px
+    padding: 0
+
+
+.motivational__items__secure__title,
+.motivational__items__fast__title,
+.motivational__items__easy__title
+  color: #666666
+  font-size: 1.3em
+  font-weight: 300
+  letter-spacing: 7px
+  text-transform: uppercase
+
+  @media (max-width: 960px)
+    font-size: 1em
+
+.motivational__items__secure__text,
+.motivational__items__fast__text,
+.motivational__items__easy__text
+  color: #9A9A9A
+  letter-spacing: 2px
+  line-height: 1.5
+  margin-bottom: 0
+
+  @media (max-width: 960px)
+    font-size: .8em
