@@ -1,11 +1,9 @@
-<!--
 <p align="center">
-  <img src="<- - - LOGO - - ->" width="100">
+  <img src="http://rcrd.me/lent-a-cal/assets/img/logo.svg" width="100">
 </p>
--->
-# My Grunt Project Boilerplate
+# Cineza Lent a Cal - Projeto de Aprendizagem Front-end
 
-[Access the website](<-- URL -->)
+[Access the website](http://rcrd.me/lent-a-cal/)
 
 This project uses:
 - [Pug](https://pugjs.org/)
@@ -25,8 +23,8 @@ First of all, install the dependencies to run this boilerplate.
 ```sh
 
 # Clone this repository
-git clone git@github.com:ricardogouveia3/<-- REPO -->
-cd <-- REPO -->
+git clone git@github.com:ricardogouveia3/lent-a-cal.git
+cd lent-a-cal.git
 
 # install dependencies
 npm install
@@ -49,8 +47,6 @@ After that, you should be good to go :)
 │   │   └── favicon.ico
 │   ├── js/
 │   │   └── *.js
-├── includes/
-│   ├── _*.pug
 ├── Gruntfile.js
 ├── index.html
 ├── index.pug
@@ -61,7 +57,7 @@ These structure will change during the project.
 
 ### Code Standarts
 
-<-- CODE STANDART -->
+Not implemented **yet**.
 
 
 ### Tasks
